@@ -1,0 +1,14 @@
+//I pledge my honor that I have abided by the Stevens Honor System.
+//Zachary Talarick
+// 9/8/2019
+
+/*
+  Functions:
+      capitalize
+      repeat
+      countChars
+*/
+
+let capitalize = function(string){
+    
+}

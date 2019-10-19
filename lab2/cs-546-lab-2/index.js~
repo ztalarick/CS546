@@ -1,0 +1,63 @@
+//Zachary Talarick
+//9/6/19
+//I pledge my honor that I have abided by the Stevens Honor System.
+
+//IMPORT
+let arrays = require('./arrayUtils.js');
+
+//arrayUtils tests
+
+function arrayUtils_head(){
+    let pass = false;
+  
+    try{
+	pass = 1 == arrays.head([1, 2, 3]);
+    }catch(e){
+	pass = false;
+    }
+
+    try{//should fail
+	arrays.head(); 
+	pass = false;
+    }catch(e){
+	pass = true;
+    }
+
+    try{
+	arrays.head([]);
+	pass = false;
+    }catch(e){
+	pass = true;
+    }	
+    return pass;
+}
+
+function arrayUtils_last(){
+    let pass = false;
+
+    try{
+	pass = 1 == arrays.last([3, 2, 1]);
+    }catch(e){
+	pass = false;
+    }
+
+    try{
+	arrays.last();
+	pass = false;
+    }catch(e){
+	pass = true;
+    }
+
+    try{
+	arrays.last("not an array")
+	pass = false;
+    }catch(e){
+	pass = true;
+    }
+
+    return pass;
+}
+
+
+console.log("Head: " + arrayUtils_head());
+console.log("Last: " + arrayUtils_last());

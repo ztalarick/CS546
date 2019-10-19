@@ -1,0 +1,15 @@
+{
+  "name": "cs-546-lab-2",
+  "version": "1.0.0",
+  "description": "MongoDB",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Zachary Talarick 10428753",
+  "license": "ISC"
+}
